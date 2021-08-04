@@ -4,7 +4,7 @@
 <!--====Head Section Start====-->
 
 <head>
-    <title>App Name: A Coding Project By John Flynn</title>
+    <title>Rewind: A Coding Project By John Flynn</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     <link href="css/site.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" </head> <!--====Head Section End====-->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+</head>
+<!--====Head Section End====-->
 
 
 <body class="d-flex flex-column h-100">
@@ -22,7 +24,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="/img/John Flynn Blue Logo.png"
-                    class="d-inline-block align-text-top" width="30" hieght="24">APP NAME</a>
+                    class="d-inline-block align-text-top" width="30" hieght="24">Rewind</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,38 +53,68 @@
     <!--====Nav Section End====-->
     <!--====Main Section Start====-->
     <main class="flex-shrink-0">
-        <div class="container">
-
-
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col">
+                    <h1 class="display-5 fw-bold 1h-1 mb-3">
+                        REWIND: A Coding Project
+                    </h1>
+                    <h4 class="lead pb-3">
+                        Flip it and reverse it. A JavaScript coding exercise using arrays.
+                        Write a program that display a string in reverse.
+                    </h4>
+                </div>
+                <div class="col">
+                    <h5 class="border-1 border-bottom border-danger">
+                        Enter A String to Reverse
+                    </h5>
+                    <form class="row gx-3 gy-2">
+                        <div class="col">
+                            <input id="userString" type="text" class="form-control" placeholder="Enter A String"
+                                aria-label="Enter A String">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" id="btnSubmit" class="btn btn-danger">Reverse Me</button>
+                        </div>
+                        <div class="alert alert-danger mt-5 invisible fade show" id="alert" role="alert">
+                            <h4 class="alert-heading">Well Done!</h4>
+                            <hr>
+                            <p class="mb-0" id="msg">
+                                <!--Insert a Message Here-->
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
-     <!--====Footer Section Start====-->
-     <footer class="footer mt-auto py-3">
-         <div class="container-fluid">
-             <div class="row row-col-1 row-cols-lg-3 gy-2">
-                 <div class="col order-last order-lg-first text-light">
-                     <div><span class="text-muted">&copy;2021</span> John Flynn |
-                         johnbishopflynn@gmail.com</div>
-                 </div>
-                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                     <img src="img/John Flynn Blue Logo.png" alt="John Flynn Logo" height="24">
-                 </div>
-                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
-                     <div class="row">
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </footer>
-     <!--====Footer Section End====-->
+    <!--====Footer Section Start====-->
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="row row-col-1 row-cols-lg-3 gy-2">
+                <div class="col order-last order-lg-first text-light">
+                    <div><span class="text-muted">&copy;2021</span> John Flynn |
+                        johnbishopflynn@gmail.com</div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                    <img src="img/John Flynn Blue Logo.png" alt="John Flynn Logo" height="24">
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="row">
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====Footer Section End====-->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -91,6 +123,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValue);
+    </script>
 
 </body>
 
