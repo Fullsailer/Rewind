@@ -1,5 +1,5 @@
 // Get the string from the page
-//controller function
+//Controller function
 function getValue() {
 
     document.getElementById("alert").classList.add("invisible");
@@ -13,18 +13,18 @@ function getValue() {
 
 //Reverse the string
 //logic function
-function reverseString() {
+function reverseString(userString) {
 
     let revString = [];
 
     //How array works
-    //let name= Bobby
-    //name[0] = "B"
-    //name[4] = "y"
+    //let name= Hello
+    //name[0] = "H"
+    //name[4] = "o"
     //last pos in an array name.lenght -1
 
     //reverse a string using a for loop
-    for (let index = userString.length - 1; index >= 0; index--) {
+    for (let index = userString.length - 1 ; index >= 0; index--) {
         revString += userString[index];
 
     }
