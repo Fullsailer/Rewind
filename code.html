@@ -60,17 +60,77 @@
                 <div class="col-lg-8">
                     <pre class="line-numebers">
                         <code class="language-javascript">
-                            //Calls Hello World
-                            function HelloWorld() {
-                            alert("Hello Worls");
-                            }
+// Get the string from the page
+//Controller function
+function getValue() {
+
+document.getElementById("alert").classList.add("invisible");
+
+let userString = document.getElementById("userString").value;
+
+let revString = reverseString(userString);
+
+displayString(revString);
+}
+
+//Reverse the string
+//logic function
+function reverseString(userString) {
+
+let revString = [];
+
+//How array works
+//let name= Hello
+//name[0] = "H"
+//name[4] = "o"
+//last pos in an array name.lenght -1
+
+//reverse a string using a for loop
+for (let index = userString.length - 1 ; index >= 0; index--) {
+    revString += userString[index];
+
+}
+
+return revString;
+}
+
+//Display the reversed string to the user.
+//View Function
+function displayString(revstring) {
+
+//Write to the page
+//Concatination of strings
+//document.getElementById("msg").innerHTML = "Your string reversed is: " + revString;
+// Option 2
+document.getElementById("msg").innerHTML = `Your string reversed is: ${revstring}`;
+//Show the alert box
+document.getElementById("alert").classList.remove("invisible");
+}
                         </code>
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a fucntion that displays an alert with a message of "Hell World"</p>
+                    <p>The Code</p>
+                    <hr>
+                    <h5>function getValue</h5>
+                    <p>This makes the alert display invisible.<br>
+                        Then gets the user and passes to the reverseString.<br>
+                        Lets reverseString pass to displayString, which then displays to page.
+                    </p>
+                    <hr>
+                    <h5>function reverseString(userString)</h5>
+                    <p>This takes the userString.<br>
+                        We create an revstring array.<br>
+                        Then us a for loop to go through userString
+                         starting at the end and dcreasing by one each time until we get to zero,
+                          add output to revstring array.<br>
+                    </p>
+                    <hr>
+                    <h5>function displayString(revstring)</h5>
+                    <p>
+                        Display function adds the text plus our revstring to the html tag in our app page.<br>
+                        We also make the alert visable again here. 
+                    </p>
                 </div>
             </div>
         </div>
